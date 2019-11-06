@@ -2,7 +2,7 @@ import tkinter as tk
 from tkcalendar import Calendar, DateEntry
 from datetime import datetime
 
-class Example(tk.Tk):
+class MyCalendar(tk.Tk):
     def __init__(self, *args, **kwargs):
         tk.Tk.__init__(self, *args, **kwargs)
 
@@ -48,5 +48,5 @@ class Example(tk.Tk):
             self.l2.configure(text="No events for " + self.date)
 
 #Running loop
-root = Example()
+root = MyCalendar()
 root.mainloop()
